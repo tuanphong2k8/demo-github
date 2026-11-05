@@ -1,4 +1,6 @@
-a, b = map(int, input().split())
-r = a / 2
-
-print(f"{a * b - 3.14 * r * r:.2f}")
+c = input()
+k = ord(c)
+if k >= 65 and k <= 90:
+    print(chr(k + 32))
+else :
+    print(chr(k - 32))

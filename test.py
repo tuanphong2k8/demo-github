@@ -1,6 +1,6 @@
 c = input()
 k = ord(c)
-if k >= 65 and k <= 90:
-    print(chr(k + 32))
+if (k >= 65 and k <= 90) or (k >= 97 and k <= 122):
+    print(f"{c} la ki tu alphabet")
 else :
-    print(chr(k - 32))
+    print(f"{c} khong la ki tu alphabet")

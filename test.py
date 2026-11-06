@@ -1,8 +1,10 @@
-import sys
-s = input()
-d = 0
-for x in s:
-    d += 1
-    if d == 5 or d == 9:
-        print(x)
-    if(d > 9): sys.exit()
+s = input("Ten chu ho: ")
+print(s)
+
+so_truoc_str = input("Chi so thang truoc: ")
+so_truoc = int(so_truoc_str.split(":")[-1].strip())
+
+so_nay_str = input("Chi so thang nay: ")
+so_nay = int(so_nay_str.split(":")[-1].strip())
+
+print(so_nay - so_truoc)

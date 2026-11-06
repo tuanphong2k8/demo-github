@@ -1,7 +1,8 @@
-c = input()
-k = ord(c)
-if(c == 'A'): 
-    print("Truoc a la ki tu dac biet")
-else :
-    k -= 1
-    print(chr(k + 32))
+import math
+a, b, c = map(int, input().split())
+if(a + b <= c or b + c <= a or c + a <= b):
+    print("Khong phai 3 canh cua tam giac")
+else:
+    p = (a + b + c)/2
+    res = math.sqrt(p * (p - a) * (p - b) * (p - c))
+    print(f"{res:.1f}")
